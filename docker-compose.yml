@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  servidor_ssh:
+    image: linuxserver/openssh-server:latest
+    container_name: lab_ssh_servidor
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - USER_NAME=alumno
+      - USER_PASSWORD=sistemas_informaticos
+      - PASSWORD_ACCESS=true
+    ports:
+     - "2222:2222"
+    restart: unless-stopped
+
+  servidor_rdp:
+    image: linuxserver/webtop:ubuntu-xfce
+    container_name: lab_rdp_servidor
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+    ports:
+      - "3389:3389"
+      - "3000:3000"
+    shm_size: "1gb"
+    restart: unless-stopped
