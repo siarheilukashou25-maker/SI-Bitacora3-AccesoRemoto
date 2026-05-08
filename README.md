@@ -83,15 +83,15 @@ Crearemos par de llaves:
     SHA256:ESb6iIB4G+g9QkbYmDCxa1hSPGLItz1u9N3Hzbh8vtk qwe@qwe.com
     The key's randomart image is:
     +--[ED25519 256]--+
-    |OB. . o |
-    |XB+. . o . |
-    |O+=.+ . |
-    |=*.= * . |
-    |o+oo+ + S . . + |
+    |OB. . o          |
+    |XB+. . o .       |
+    |O+=.+ .          |
+    |=*.= * .         |
+    |o+oo+ + S . . +  |
     |. . .o . . . + o |
-    | . o . |
-    | o .o|
-    | o+E|
+    | . o .           |
+    | o .o            |
+    | o+E             |
     +----[SHA256]-----+
     PS C:\Users\DAM1>
 
